@@ -186,7 +186,7 @@ a {
 ***********************************************************/
 
 .title2 {
-    width: 30%;
+    width: 90%;
 }
 .btn-skip {
     display: grid;
@@ -316,24 +316,31 @@ div#about {
 
 @media only screen and (max-width: 37.5em) {
     html {
-        font-size: 8px;
+        font-size: 16px;
     }
     .bg-img,
     img {
         height: 50rem;
     }
-    .container {width: 70%; padding: 1.5rem;}
+    .container {width: 80%; padding: 1.5rem;}
     .contact{margin-top: 3rem;}
     body{background-color: #d59f01;}
 
 }
 @media only screen and (max-width: 56.25em) {
     html {
-        font-size: 9px;
+        font-size: 16px;
     }
+    .container {width: 70%;}
+
 }
 @media only screen and (max-width: 75em) {
     html {
-        font-size: 12px;
+        font-size: 18px;
     }
+    .container {width: 80%;}
+    div.title,
+    .title > p,
+    .reg {font-size: 1.2rem;padding: .5rem 0;}
+    #quiz {font-size: 1.5rem;}
 }
