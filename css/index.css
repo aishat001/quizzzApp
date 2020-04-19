@@ -115,7 +115,7 @@ a {
       width: 50%;
       border-radius: 1rem;
       margin-top: 4rem;
-      padding: .4rem;
+      padding: 1rem;
       color: black;
       border: 2px solid white;
       box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
@@ -165,6 +165,21 @@ a {
     font-size: 2rem;
 }
 
+#white,
+#default {
+    background-color: #f3f3f3;
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+    border: none;
+ 
+}
+.orange {background-color:#cc8227;box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+}
+.Turquoise {background-color: rgb(29, 145, 133);box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);border: none;
+}
+.pink {background-color: rgb(218, 112, 129);box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);border: none;
+}
+.default {background-color: rgb(218, 218, 218);box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);border: none;color: white;
+}
   
 /***************************************************************
 *********    CREATING QUIZ    ********************************
@@ -279,8 +294,12 @@ img {
             width: 50%;
             border: 1px solid white;
         }
+        .table-b {
+            padding: 1rem;
+        }
 
-/************************** CONTACT *****************/
+/************************** CONTACT **********************
+****************************************************/
 
 div#about {
     text-align: center;
@@ -293,60 +312,7 @@ div#about {
 
 
 
-
-
-
-
-#white,
-#default {
-    background-color: #f3f3f3;
-    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
-    border: none;
- 
-}
-.orange {
-    background-color:#cc8227;
-    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
-}
-.Turquoise {
-    background-color: rgb(29, 145, 133);
-    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
-    border: none;
-}
-.pink {
-    background-color: rgb(218, 112, 129);
-    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
-    border: none;
-}
-.default {
-    background-color: rgb(218, 218, 218);
-    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
-    border: none;
-    color: white;
-}
-
-
-
-  
-/*
-// MEDIA QUERY MANAGER
-
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-
-$breakpoint arguement choices:
-- phone
-- tab-portb
-- tab-land
-- big-desktop
-
-ORDER: Base + typography > general layout + grid > page layout > components
-
-1em = 16px
-*/
+  /**********************MEDIA QUERIES***********************/
 
 @media only screen and (max-width: 37.5em) {
     html {
