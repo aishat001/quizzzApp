@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #dda702;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.centerp {
+    text-align: center;
+}
+.padding {
+    padding: .5rem;
+} 
+.original-font {
+    font-size: 2rem;
+}
+
+
+
+ /*html {
+
+    /* This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    } */
+
+/* COLORS*/
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3rem;
+    background-color:rgb(65, 150, 165) ;
+    padding: .8rem;
+}
+
+.logo {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: saddlebrown;
+}
+.logo::before {
+    content:""; 
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%; 
+    margin-left: 1rem;  
+    position: absolute;
+    background-color: royalblue;
+}
+.logo-title {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+/*********************************************
+********Homepage(index.html  *******************8********
+*****************************************8****/
+
+.title {
+    text-align: center;
+    padding: .7rem;
+}
+.reg {
+    width: -webkit-fill-available;
+    background-color:#f3f3f3 ;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 2rem;
+    font-size:1.5rem;
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+
+}
+
+/*******************************************
+******** REGISTER.HTML PAGE 
+ **********************************************/
+
+.dot {
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .black{background-color: black; color: white;}
+  .container {
+      width: 50%;
+      border-radius: 1rem;
+      margin-top: 4rem;
+      padding: .4rem;
+      color: black;
+      border: 2px solid white;
+      box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+
+  }
+  .container-wrapper form {
+      height: 13rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  label {
+      display: contents;
+      color:#6b6a6a ;
+  }
+  #lang {
+    color:#6b6a6a ;
+
+  }
+  input,
+  select,
+  .submit {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.submit {background-color: #f3f3f3;
+    cursor: pointer; width: 100%;
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+    border: none;
+}
+
+.info {
+    width: 50%;
+    padding: 2.5rem 0;
+}
+.footer {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+.contact {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+  
+/***************************************************************
+*********    CREATING QUIZ    ********************************
+***********************************************************/
+
+.title2 {
+    width: 30%;
+}
+.btn-skip {
+    display: grid;
+    padding: .3rem;
+}
+.number {
+    cursor: pointer;
+}
+.number:hover {
+    background-color: rgb(65, 150, 165);
+    padding: 5px;
+    color: white;
+    padding: 0;
+}
+div.yes-no {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+input.yes,
+input.no {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: .5rem;
+    cursor: pointer;
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+
+}
+
+div.yes:hover,
+ div.no:hover {
+    background-color: rgb(224, 224, 224);
+}
+div.yes:active,
+div.no:active {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0;
+} 
+.section {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+
+}
+.bg-img,
+img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 36rem;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+    object-fit:cover ;
+    overflow: hidden; }
+
+    #quiz {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    .submit-quiz {
+        width: 40%;
+        box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+        border: none;
+        border-radius: 5px;
+    }
+
+    /************************************************************
+    ******** LINK SHARE ********************************************
+    **************************************************************/
+    #link {
+        width: 93.5%;
+        height: 2rem;
+        background-color: transparent;
+        border: none;
+    }
+    input:focus {
+        outline: none;
+    }
+
+    /*************************************************************************88
+    ****** TABLE *************************************************88
+    **************************************************************/  
+        div.table {
+            display: flex;
+            flex-direction: column;
+            width: 97%;
+            margin: 0px;
+            padding: .4rem;
+            align-items: center;
+        }
+        div.table-row {
+            width: 100%;
+            height: 1.5rem;
+            display: flex;
+            flex-direction: row;
+        }
+        div.table-h,
+        div.table-b {
+            width: 50%;
+            border: 1px solid white;
+        }
+
+/************************** CONTACT *****************/
+
+div#about {
+    text-align: center;
+    font-size: 5rem;
+    padding: 10rem;
+}
+
+
+
+
+
+
+
+
+
+
+#white,
+#default {
+    background-color: #f3f3f3;
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+    border: none;
+ 
+}
+.orange {
+    background-color:#cc8227;
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+}
+.Turquoise {
+    background-color: rgb(29, 145, 133);
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+    border: none;
+}
+.pink {
+    background-color: rgb(218, 112, 129);
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+    border: none;
+}
+.default {
+    background-color: rgb(218, 218, 218);
+    box-shadow:0 4px 7px 0 rgba(0,0,0,0.2);
+    border: none;
+    color: white;
+}
+
+
+
+  
+/*
+// MEDIA QUERY MANAGER
+
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-portb
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@media only screen and (max-width: 37.5em) {
+    html {
+        font-size: 8px;
+    }
+    .bg-img,
+    img {
+        height: 50rem;
+    }
+    .container {width: 70%; padding: 1.5rem;}
+    .contact{margin-top: 3rem;}
+    body{background-color: #d59f01;}
+
+}
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 12px;
+    }
+}
